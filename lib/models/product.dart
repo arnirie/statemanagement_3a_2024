@@ -16,7 +16,7 @@ class Product {
   Product.fromMap(Map<String, dynamic> value) {
     code = value[DbHelper.prodCode];
     nameDesc = value[DbHelper.prodName];
-    price = value[DbHelper.prodPrice];
+    price = double.parse(value[DbHelper.prodPrice].toString());
     isFavorite = false;
   }
 
